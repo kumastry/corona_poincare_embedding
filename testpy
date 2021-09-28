@@ -1,0 +1,5 @@
+from gensim.models.poincare import PoincareModel
+relations = [('ff', 'ffq', 'fad', 'fdaf'), ('fafa', 'fdaf')]
+model = PoincareModel(relations, negative=2)
+model.train(epochs=50)
+print(model)
